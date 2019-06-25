@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VehicleRentFleet</RootNamespace>
+    <AssemblyName>VehicleRentFleet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsActivity.cs" />
+    <Compile Include="ClsHiringActivity.cs" />
+    <Compile Include="ClsRelocationActivity.cs" />
+    <Compile Include="ClsRentVehicleFleet.cs" />
+    <Compile Include="ClsServiceActivity.cs" />
+    <Compile Include="ClsSortByDate.cs" />
+    <Compile Include="ClsSortByName.cs" />
+    <Compile Include="ClsVehicle.cs" />
+    <Compile Include="FrmActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActivity.Designer.cs">
+      <DependentUpon>FrmActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActivityDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActivityDashboard.Designer.cs">
+      <DependentUpon>FrmActivityDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHiringActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHiringActivity.Designer.cs">
+      <DependentUpon>FrmHiringActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageVehicle.Designer.cs">
+      <DependentUpon>FrmManageVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelocationActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelocationActivity.Designer.cs">
+      <DependentUpon>FrmRelocationActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServiceActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServiceActivity.Designer.cs">
+      <DependentUpon>FrmServiceActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleFleet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleFleet.Designer.cs">
+      <DependentUpon>FrmVehicleFleet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmActivity.resx">
+      <DependentUpon>FrmActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActivityDashboard.resx">
+      <DependentUpon>FrmActivityDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHiringActivity.resx">
+      <DependentUpon>FrmHiringActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageVehicle.resx">
+      <DependentUpon>FrmManageVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelocationActivity.resx">
+      <DependentUpon>FrmRelocationActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServiceActivity.resx">
+      <DependentUpon>FrmServiceActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleFleet.resx">
+      <DependentUpon>FrmVehicleFleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

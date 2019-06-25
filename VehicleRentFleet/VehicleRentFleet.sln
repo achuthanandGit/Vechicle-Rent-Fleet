@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleRentFleet", "VehicleRentFleet\VehicleRentFleet.csproj", "{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupVehicleRentFleert", "SetupVehicleRentFleert\SetupVehicleRentFleert.vdproj", "{6F74EE7D-9987-4E5F-9D72-9E6052244091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89D02D4-4C77-45A3-89DB-6EDDEFE625F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F74EE7D-9987-4E5F-9D72-9E6052244091}.Debug|Any CPU.ActiveCfg = Debug
+		{6F74EE7D-9987-4E5F-9D72-9E6052244091}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A491F776-6F3B-4710-B432-3159DF90AEA2}
+	EndGlobalSection
+EndGlobal
